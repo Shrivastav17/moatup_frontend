@@ -1,0 +1,232 @@
+.post-btn{
+    /* Rectangle 10 */
+
+position: absolute;
+width: 149px;
+height: 36px;
+left: 1024px;
+top: 347px;
+
+background: #646464;
+border-radius: 50px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #FFFFFF;
+
+}
+.post-main{
+    /* Frame 9 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 711px;
+height: 455px;
+  left: 465px;
+  top: 406px;
+  border: 1px solid;
+  border-radius: 19px;
+
+
+}
+
+.post-main .post-card{
+    /* Frame 9 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 661px;
+  height: 452px;
+  left: 24px;
+  top: 23px;
+
+}
+.post-main .post-card .post-header{
+/* Frame 8 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 207px;
+height: 62px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.post-main .post-card .post-header .profile-img{
+    /* Rectangle 11 */
+
+width: 60px;
+height: 60px;
+
+background: #C4C4C4;
+border-radius: 5px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.post-main .post-card .post-header .post-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    width: 131px;
+    height: 62px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.post-main .post-card .post-header .post-meta h6{
+    /* Name Surname */
+
+width: 131px;
+height: 26px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+
+/* Textblack */
+color: #002F2C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.post-main .post-card .post-header .post-meta p{
+    /* Today, 12.45 */
+
+width: 82px;
+height: 20px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+
+/* nav */
+color: #646464;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.post-main .post-card .post-header .post-meta p span{
+width: 14px;
+height: 14px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.post-main .post-card .post-image{
+/* unsplash:2JDDn7iSGH8 */
+
+width: 644px !important;
+  height: 270px !important;
+/* background: url(2.jpg), #C4C4C4; */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+
+}
+
+.post-actions small{
+    /* 68 Like 21 Comments */
+
+position: absolute;
+width: 130px;
+  height: 20px;
+  left: 521px;
+  top: 388px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+line-height: 18px;
+
+/* nav */
+color: #646464;
+
+
+}
+.post-actions .custom-btn1{
+    /* Comment */
+
+position: absolute;
+width: 114px;
+  height: 23px;
+  left: 124px;
+top: 387px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+color: #000000;
+
+
+}
+.post-actions .custom-btn{
+    /* Like */
+
+position: absolute;
+width: 89px;
+  height: 23px;
+  left: 2px;
+top: 387px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+
+color: #000000;
+
+
+}

@@ -1,0 +1,80 @@
+.email-container {
+    box-sizing: border-box;
+    position: absolute;
+    width: 721px;
+  height: 194px;
+  left: 460px;
+        top: 113px;
+    background: linear-gradient(93.03deg, #009E94 0.53%, #74B462 108%);
+    box-shadow: 0px 4px 24px -6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+}
+
+.email-container h3{
+position: absolute;
+width: 122px;
+height: 26px;
+right: 572px;
+  top: 6px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+.email-container .email-input{
+position: absolute;
+width: 668px;
+  height: 97px;
+  left: 26px;
+  top: 38px;
+background: #FFFFFF;
+box-shadow: inset 0px 4px 10px -3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+.email-container p{
+position: absolute;
+width: 132px;
+  height: 20px;
+  left: 152px;
+  top: 12px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #FFFFFF;
+}
+
+.email-container .radio-group{
+    position: absolute;
+    width: 400px;
+    height: 103px;
+    left: 29px;
+    top: 142px;
+    display: flex;
+    gap: 38px;
+  margin-top: 10px;
+  color: #FFFFFF;
+} 
+.email-container .custom-btn{
+background: #FFFFFF;
+border-radius: 10px;
+position: absolute;
+width: 110px;
+  height: 36px;
+  left: 582px;
+  top: 148px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+color: #009E94;
+}
+
+
+

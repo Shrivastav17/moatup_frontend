@@ -1,0 +1,100 @@
+/* .user-box{
+    width: 412px !important;
+  left: 117px !important;
+} */
+.user-photo{
+    position: absolute;
+    width: 93px;
+    height: 93px;
+    left: 50px;
+    top: 117px;
+    border-radius: 5px;
+    }
+    .user-card .user-details h4{
+    position: absolute;
+    width: 94px;
+    height: 23px;
+    left: 160px;
+    top: 127px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #002F2C;
+    }
+    .user-card .user-details p{
+    position: absolute;
+    width: 129px;
+    height: 20px;
+    left: 160px;
+    top: 151px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #646464;
+    }
+    .user-card .user-details .followers-section{
+    position: absolute;
+    width: 75.11px;
+    height: 28.06px;
+    left: 160px;
+    top: 172px;
+    }
+    .user-card .user-details span{
+    top: 175px;
+      position: absolute;
+      left: 187px;
+    }
+    .custom-line {
+        border: none;
+        height: 2px;
+        background-color: #ccc;
+        margin: 10px 0;
+    }
+    .user-card{
+        position: absolute;
+      width: 412px;
+      left: 0px;
+      top: 3px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 6px;
+    }
+    .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 412px;
+      height: 220px;
+      left: 12.91px;
+      top: 250.81px;
+    
+    }
+    .menu ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px 10px 0px;
+    gap: 8px;
+    width: 298px;
+    height: 44px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    }
+    .menu ul li i{
+        color: #166d39;
+    }

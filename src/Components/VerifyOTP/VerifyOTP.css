@@ -1,0 +1,95 @@
+.otp-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* margin-bottom: -38px; */
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* height: 100%; */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(66, 68, 90, 1);
+    max-width: 500px;
+
+    
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.otp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otp-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.otp-inputs input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.otp-inputs input:focus {
+    border-color: #03BC38;
+    box-shadow: 0 0 5px rgba(99, 93, 192, 0.5);
+}
+
+.verify-button {
+    background-color: #03BC38;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.verify-button:hover {
+    background-color: #03BC38;
+}
+
+.otp-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.otp-links span {
+    color: gray;
+    cursor: pointer;
+}
+
+.otp-links a {
+    text-decoration: none;
+    color: gray;
+}
+
+.otp-links span:hover,
+.otp-links a:hover {
+    text-decoration: underline;
+}

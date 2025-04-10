@@ -1,0 +1,112 @@
+ /* Posts */
+ .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Post Card */
+  .post-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    padding: 10px;
+  }
+  
+  /* Post Header */
+  .post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .post-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ddd;
+  }
+  
+  .post-header h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .post-header p {
+    font-size: 12px;
+    color: gray;
+    margin: 2px 0;
+  }
+  
+  .time {
+    font-size: 12px;
+    color: green;
+  }
+  
+  .time i {
+    margin-right: 5px;
+  }
+  
+  /* Post Image */
+  .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  /* Post Footer */
+  .post-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .actions i {
+    margin-right: 5px;
+  }
+  
+  .stats {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .feed-container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .post-box textarea {
+      font-size: 12px;
+    }
+  
+    .post-actions button {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  
+    .actions button {
+      font-size: 12px;
+    }
+  }

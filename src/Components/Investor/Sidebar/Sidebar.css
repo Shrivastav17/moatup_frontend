@@ -1,0 +1,172 @@
+/* Container */
+.dashboard-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .profile-role {
+    font-size: 12px;
+    color: #777;
+    margin: 2px 0;
+  }
+  
+  .profile-followers {
+    font-size: 12px;
+    font-weight: bold;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-followers i {
+    margin-right: 5px;
+  }
+  
+  /* Profile Menu */
+  .profile-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .menu-item i {
+    margin-right: 8px;
+    color: #007bff;
+  }
+  
+  /* Stock Trends Section */
+  .stock-container {
+    width: 100%;
+    border: 1px solid #007bff;
+    padding: 10px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  /* Tabs */
+  .stock-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .stock-tabs button {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #646464;
+    cursor: pointer;
+  }
+  
+  .stock-tabs .active {
+    color: black;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  /* Stock List */
+  .stock-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .stock-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .stock-item:last-child {
+    border-bottom: none;
+  }
+  
+  .stock-code {
+    font-weight: bold;
+    color: #007bff;
+    width: 40px;
+  }
+  
+  .stock-name {
+    flex: 1;
+    color: #333;
+    font-size: 13px;
+  }
+  
+  .stock-price {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .stock-change {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .stock-change.up {
+    color: green;
+  }
+  
+  .stock-change.down {
+    color: red;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .dashboard-container {
+      max-width: 100%;
+      padding: 8px;
+    }
+  
+    .stock-item {
+      font-size: 12px;
+    }
+  
+    .stock-tabs button {
+      font-size: 12px;
+    }
+  }

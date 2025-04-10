@@ -1,0 +1,238 @@
+/* General Styles */
+.connections-container {
+    display: flex;
+    /* max-width: 900px; */
+    margin: auto;
+    font-family: "Poppins", sans-serif; 
+  }
+  
+  /* Sidebar */
+/* Sidebar Container */
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Sidebar Item */
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sidebar-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Sidebar Icon */
+  .sidebar-item i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #16a085;
+  }
+  
+  /* Sidebar Text */
+  .sidebar-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+  }
+  
+  /* Notification Badge */
+  .sidebar-item span {
+    background: #16a085;
+    color: white;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    min-width: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Hover Effect */
+  .sidebar-item:hover {
+    background: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  /* Main Content */
+ /* Main Content Container */
+.main-content {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Section Titles */
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 35px 0 23px;;
+    color: #333;
+  }
+  
+  /* Card Container */
+  .invitation-list,
+  .investor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Individual Cards */
+  .invite-card,
+  .investor-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 12px;
+    padding: 12px 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .invite-card:hover,
+  .investor-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Company Logo */
+  .company-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Invite & Investor Details */
+  .invite-details,
+  .investor-details {
+    flex: 1;
+    margin-left: 12px;
+  }
+  
+  .invite-details h4,
+  .investor-details h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .invite-details p,
+  .investor-details p {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  /* Buttons */
+  .accept-btn,
+  .ignore-btn,
+  .connect-btn {
+    border: none;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Accept Button */
+  .accept-btn {
+    background: #16a085;
+    color: white;
+  }
+  
+  .accept-btn:hover {
+    background: #12876f;
+  }
+  
+  /* Ignore Button */
+  .ignore-btn {
+    background: transparent;
+    color: gray;
+    margin-left: 8px;
+  }
+  
+  .ignore-btn:hover {
+    color: black;
+  }
+  
+  /* Connect Button */
+  .connect-btn {
+    background: #16a085;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .connect-btn:hover {
+    background: #12876f;
+  }
+  
+  /* Icon for Connect Button */
+  .connect-btn i {
+    font-size: 16px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .connections-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sidebar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+  
+    .sidebar-item {
+      flex: 1;
+      text-align: center;
+      font-size: 12px;
+    }
+  
+    .main-content {
+      width: 100%;
+    }
+  
+    .invite-card,
+    .investor-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .company-logo {
+      margin-bottom: 10px;
+    }
+  
+    .accept-btn,
+    .ignore-btn,
+    .connect-btn {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }

@@ -1,0 +1,44 @@
+.ir-library-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.ir-library-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 250px;
+    border-right: 1px solid #ddd;
+}
+
+.ir-library-nav li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.ir-library-nav .active {
+    color: #007bff;
+    font-weight: bold;
+    border-left: 3px solid #007bff;
+    padding-left: 7px;
+}
+
+.ir-documents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.ir-document {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.ir-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: green;
+}

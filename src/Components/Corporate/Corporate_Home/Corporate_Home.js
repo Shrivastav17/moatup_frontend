@@ -9,7 +9,7 @@ function Corporate_Home() {
 
     <>
     <Corporate_Header/>
-   <div className="container custom-c mt-5">
+   <div className="mt-5">
       <div className="row ">
         <div className="col-md-4  p-3 mt-3"><Corporate_Left></Corporate_Left></div>
         <div className="col-md-4  p-3 mt-3"><Corporate_Feed></Corporate_Feed></div>

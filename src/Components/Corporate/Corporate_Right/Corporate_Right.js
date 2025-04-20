@@ -3,7 +3,7 @@ import './Corporate_Right.css'
 export default function Corporate_Right() {
   return (
     <>
-      <div className="events-container">
+      <div className="events-box">
         <h3>UPCOMING EVENTS</h3>
         <hr className="divider" />
 

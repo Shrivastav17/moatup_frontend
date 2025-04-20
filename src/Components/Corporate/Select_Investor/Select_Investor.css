@@ -49,7 +49,7 @@ line-height: 18px;
 color: #FFFFFF;
 }
 
-.email-container .radio-group{
+.email-container .custom-radio {
     position: absolute;
     width: 400px;
     height: 103px;
@@ -58,8 +58,9 @@ color: #FFFFFF;
     display: flex;
     gap: 38px;
   margin-top: 10px;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 } 
+
 .email-container .custom-btn{
 background: #FFFFFF;
 border-radius: 10px;

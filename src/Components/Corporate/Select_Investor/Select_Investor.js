@@ -1,5 +1,5 @@
 import React from 'react'
-import './Select_Investor.css'
+import "./Select_Investor.css"
 export default function Select_Investor() {
     return (
         <>
@@ -12,8 +12,8 @@ export default function Select_Investor() {
                     className="email-input"
                 />
 
-                <div className="radio-group">
-                    <label>
+                <div className="custom-radio">
+                    <label >
                         <input type="radio" name="emailOption" value="all" /> Invite Investor
                     </label>
                     <label>

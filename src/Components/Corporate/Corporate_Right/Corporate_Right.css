@@ -1,4 +1,4 @@
-.events-container {
+.events-box {
     position: absolute;
     width: 412px;
    height: 26px;
@@ -13,7 +13,7 @@
 
 }
 
-.events-container h3 {
+.events-box h3 {
     font-weight: 600;
     font-size: 20px;
     line-height: 34px;

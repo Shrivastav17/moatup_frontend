@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
 import url from '../../env.js';
-
+import "./ForgetPassword.css"
+import Header from '../Header/Header.js';
 const Forgetpassword = () => {
   const {
     register,
@@ -16,7 +17,7 @@ const Forgetpassword = () => {
   const onSubmit = async (data) => {
     try {
       // Make a POST request to the backend API
-      const response = await fetch (`${url.apipath}user/forgot-password`, { // Fixed backtick issue
+      const response = await fetch(`${url.apipath}user/forgot-password`, { // Fixed backtick issue
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -42,7 +43,7 @@ const Forgetpassword = () => {
 
   return (
     <>
-      <div className="center-wrapper">
+      {/* <div className="center-wrapper">
         <div className="form-container">
           <h2>Forget Your Password</h2>
           <p className="para">Enter registered email. We will send a six-digit OTP.</p>
@@ -68,7 +69,42 @@ const Forgetpassword = () => {
           </form>
           {msg && <p className="message">{msg}</p>}
         </div>
+      </div> */}
+
+<Header></Header>
+      <div className="forget-wrapper">
+        <div className="forget-container">
+          <h2 className="forget-title">Forget Your Password</h2>
+          <p className="forget-subtitle">Enter registered email. We will send a six-digit OTP.</p>
+
+          <form onSubmit={handleSubmit(onSubmit)} className="forget-form">
+            <div className="forget-input-group">
+              <input
+                type="email"
+                placeholder="Email Id"
+                {...register('useremail', {
+                  required: 'Email is required',
+                  pattern: { value: /^\S+@\S+$/i, message: 'Invalid email address' },
+                })}
+                className="forget-input"
+              />
+              {errors.useremail && <p className="forget-error">{errors.useremail.message}</p>}
+            </div>
+
+            <button type="submit" className="forget-submit-button">Send OTP</button>
+
+            <div className="forget-links">
+              <span className="forget-login-link">
+                <Link to="/">LogIn</Link>
+              </span>
+            </div>
+          </form>
+
+          {msg && <p className="forget-message">{msg}</p>}
+        </div>
       </div>
+
+
     </>
   );
 };

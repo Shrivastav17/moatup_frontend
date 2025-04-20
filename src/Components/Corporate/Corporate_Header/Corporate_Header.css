@@ -84,13 +84,13 @@
   
   /* Add hover effect */
   .custom-links .nav-link:hover {
-    color: #1ad3457d;
+    color: #009E94;
     transform: scale(1.05);
   }
   
   /* Highlight active home link */
   .custom-links .home-1 {
-    color: #25c210;
+    color: #009E94;
     font-weight: bold;
   }
   
@@ -110,7 +110,7 @@
   
   .custom-links .nav-user .nav-link {
     font-weight: bold;
-    color: #222;
+    color: #009E94;
   }
   
   

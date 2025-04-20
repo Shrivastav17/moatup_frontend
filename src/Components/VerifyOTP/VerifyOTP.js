@@ -43,35 +43,72 @@ const VerifyOTP = () => {
   };
 
   return (
-    <div className="otp-container">
-      <h2>Verify your OTP</h2>
-      <p>Enter the 6-digit OTP we just sent to your email</p>
-      <form onSubmit={handleSubmit(onSubmit)} className="otp-form">
-        <div className="otp-inputs">
-          {Array(6)
-            .fill("")
-            .map((_, index) => (
-              <input
-                key={index}
-                type="text"
-                maxLength="1"
-                {...register(`otp${index + 1}`, { required: true })}
-                onKeyUp={(e) => handleKeyUp(e, index)}
-                className="otp-input"
-              />
-            ))}
+    // <div className="otp-container">
+    //   <h2>Verify your OTP</h2>
+    //   <p>Enter the 6-digit OTP we just sent to your email</p>
+    //   <form onSubmit={handleSubmit(onSubmit)} className="otp-form">
+    //     <div className="otp-inputs">
+    //       {Array(6)
+    //         .fill("")
+    //         .map((_, index) => (
+    //           <input
+    //             key={index}
+    //             type="text"
+    //             maxLength="1"
+    //             {...register(`otp${index + 1}`, { required: true })}
+    //             onKeyUp={(e) => handleKeyUp(e, index)}
+    //             className="otp-input"
+    //           />
+    //         ))}
+    //     </div>
+    //     <button type="submit" className="verify-button">
+    //       Verify OTP
+    //     </button>
+    //   </form>
+    //   {message && <p style={{ color: 'green' }}>{message}</p>}
+    //   {error && <p style={{ color: 'red' }}>{error}</p>}
+    //   <div className="otp-links">
+    //     <span>Resend</span>
+
+    //   </div>
+    // </div>
+    <>
+      <div className="otp-page">
+        <div className="otp-container">
+          <h2 className="otp-title">Verify your OTP</h2>
+          <p className="otp-subtitle">Enter the 6-digit OTP we just sent to your email</p>
+
+          <form onSubmit={handleSubmit(onSubmit)} className="otp-form">
+            <div className="otp-inputs">
+              {Array(6)
+                .fill("")
+                .map((_, index) => (
+                  <input
+                    key={index}
+                    type="text"
+                    maxLength="1"
+                    {...register(`otp${index + 1}`, { required: true })}
+                    onKeyUp={(e) => handleKeyUp(e, index)}
+                    className="otp-input"
+                  />
+                ))}
+            </div>
+
+            <button type="submit" className="otp-submit-button">
+              Verify OTP
+            </button>
+          </form>
+
+          {message && <p className="otp-message">{message}</p>}
+          {error && <p className="otp-error">{error}</p>}
+
+          <div className="otp-links">
+            <span className="otp-resend">Resend</span>
+          </div>
         </div>
-        <button type="submit" className="verify-button">
-          Verify OTP
-        </button>
-      </form>
-      {message && <p style={{ color: 'green' }}>{message}</p>}
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      <div className="otp-links">
-        <span>Resend</span>
-      
       </div>
-    </div>
+
+    </>
   );
 };
 

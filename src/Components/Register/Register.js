@@ -38,7 +38,7 @@ const Register = () => {
   return (
     <>
       <Header />
-      <div className="center-wrapper">
+      {/* <div className="center-wrapper">
         <div className="form-container mt-5">
           <h2>Register</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -111,7 +111,134 @@ const Register = () => {
             <span className="acc">Already have an account? <Link to="/">Log In</Link></span>
           </form>
         </div>
+      </div> */}
+
+      <div className="register-page">
+        <div className="register-form-container mt-5">
+          <h2 className="register-title">Register</h2>
+          <form onSubmit={handleSubmit(onSubmit)} className="register-form">
+            <div className="register-input-group">
+              <input
+                type="text"
+                placeholder="Name"
+                className="register-input"
+                {...register('username', { required: 'Name is required' })}
+              />
+              {errors.username && <p className="register-error">{errors.username.message}</p>}
+            </div>
+
+            <div className="register-input-group">
+              <textarea
+                placeholder="Description"
+                className="register-textarea"
+                {...register('description')}
+                rows={4}
+                style={{ resize: 'vertical' }}
+              />
+            </div>
+
+            <div className="register-input-group">
+              <input
+                type="text"
+                placeholder="Website"
+                className="register-input"
+                {...register('website')}
+              />
+            </div>
+
+            <div className="register-input-group">
+              <input
+                type="email"
+                placeholder="Email ID"
+                className="register-input"
+                {...register('useremail', {
+                  required: 'Email is required',
+                  pattern: { value: /^\S+@\S+$/i, message: 'Invalid email' },
+                })}
+              />
+              {errors.useremail && <p className="register-error">{errors.useremail.message}</p>}
+            </div>
+
+            <div className="register-input-group">
+              <input
+                type="text"
+                placeholder="Specialties"
+                className="register-input"
+                {...register('specialties')}
+              />
+            </div>
+
+            <div className="register-input-group">
+              <select
+                className="register-select"
+                {...register('type', { required: 'Please select a type' })}
+              >
+                <option value="">Select Type</option>
+                <option value="Investor">Investor</option>
+                <option value="Corporate">Corporate</option>
+              </select>
+              {errors.type && <p className="register-error">{errors.type.message}</p>}
+            </div>
+
+            {userType === 'Corporate' && (
+              <>
+                <div className="register-input-group">
+                  <input
+                    type="text"
+                    placeholder="Industry"
+                    className="register-input"
+                    {...register('industry', { required: 'Industry Name is required for Corporate' })}
+                  />
+                  {errors.industry && <p className="register-error">{errors.industry.message}</p>}
+                </div>
+
+                <div className="register-input-group">
+                  <input
+                    type="text"
+                    placeholder="Company Size"
+                    className="register-input"
+                    {...register('companySize', { required: 'Company Size is required for Corporate' })}
+                  />
+                  {errors.companySize && <p className="register-error">{errors.companySize.message}</p>}
+                </div>
+
+                <div className="register-input-group">
+                  <input
+                    type="text"
+                    placeholder="Company Type"
+                    className="register-input"
+                    {...register('companyType', { required: 'Company Type is required for Corporate' })}
+                  />
+                  {errors.companyType && <p className="register-error">{errors.companyType.message}</p>}
+                </div>
+              </>
+            )}
+
+            <div className="register-input-group">
+              <input
+                type="password"
+                placeholder="Password"
+                className="register-input"
+                {...register('userpass', {
+                  required: 'Password is required',
+                  minLength: { value: 6, message: 'Minimum 6 characters' },
+                })}
+                autoComplete="new-password"
+              />
+              {errors.userpass && <p className="register-error">{errors.userpass.message}</p>}
+            </div>
+
+            <button type="submit" className="register-submit-button">Register</button>
+            <span className="register-login-link">
+              Already have an account? <Link to="/">Log In</Link>
+            </span>
+          </form>
+        </div>
       </div>
+
+
+
+
       <ToastContainer />
     </>
   );

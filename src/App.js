@@ -21,6 +21,8 @@ import Investor_about from './Components/Investor/Investor_about/Investor_about.
 import CreatePost from './Components/CreatePost/CreatePost.js';
 import Corporate_Home from './Components/Corporate/Corporate_Home/Corporate_Home.js';
 import InviteInvestor from './Components/InviteInvestor/InviteInvestor.js';
+import SendMaterial from './Components/Corporate/SendMaterial/SendMaterial.js';
+import Investor_Home from './Components/Investor/Investor_Home/Investor_Home.js';
 
 export default function App() {
   return (
@@ -44,7 +46,10 @@ export default function App() {
           <Route path="/about" element={<Investor_about />} />
           <Route path="/createpost" element={<CreatePost />} />
           <Route path="/corporate_home" element={<Corporate_Home />} />
+          <Route path="/investor_home" element={<Investor_Home/>} />
           <Route path="/invite_investor" element={< InviteInvestor/>} />
+          <Route path="/send_material" element={< SendMaterial/>} />
+
         </Routes>
       </Router>
     </>

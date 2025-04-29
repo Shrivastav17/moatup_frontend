@@ -1,0 +1,118 @@
+.custom-navbar{
+    height: 7px;
+}
+.custom-search .input-group .form-control {
+    position: absolute;
+    width: 370px;
+    height: 37px;
+  left: 341px;
+  top: -8px;
+  background: #7D666647;
+  opacity: 0.5;
+    border-radius: 17px !important;
+
+}
+
+.custom-search .input-group .text-muted {
+    position: absolute;
+    width: 22px;
+    height: 28px;
+    left: 671px;
+    top: -3px;
+    color:  #74B462!important;
+
+
+}
+
+.navbar .navbar-brand .me-2 {
+    position: absolute;
+    width: 78px;
+    height: 47px;
+    left: 50px;
+    top: -3px;
+}
+
+.custom-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+    position: absolute;
+    width: 995px;
+    height: 0px;
+    left: 579px;
+    top: 28px;
+}
+/* Vector */
+
+
+
+
+.navbar-brand .nav-item .nav-user {
+
+    position: absolute;
+    width: 149px;
+    height: 32px;
+    left: 1162px;
+    top: 14px;
+}
+
+/* Styles for the navigation container */
+.custom-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the navbar items */
+  .custom-links .navbar-nav {
+    display: flex;
+    gap: 20px; /* Adds spacing between items */
+  }
+  
+  /* Style individual links */
+  .custom-links .nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    padding: 8px 12px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+  }
+  
+  /* Add hover effect */
+  .custom-links .nav-link:hover {
+    color: #009E94;
+    transform: scale(1.05);
+  }
+  
+  /* Highlight active home link */
+  .custom-links .home-1 {
+    color: #009E94;
+    font-weight: bold;
+  }
+  
+  /* Style for the notification icon (Bell) */
+  .custom-links .nav-item:last-child .nav-link {
+    font-size: 18px;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    transition: background 0.3s;
+  }
+  
+  
+  .custom-links .nav-user {
+    margin-left: 10px;
+  }
+  
+  .custom-links .nav-user .nav-link {
+    font-weight: bold;
+    color: #009E94;
+  }
+  
+  
+
+

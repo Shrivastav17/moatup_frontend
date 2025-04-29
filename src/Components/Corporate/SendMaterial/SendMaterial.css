@@ -1,0 +1,222 @@
+.send-material-form-container h2 {
+    position: absolute;
+    width: 180px;
+    height: 39px;
+    left: 141px;
+    top: 116px;
+  
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+  
+    color: #009E94;
+  }
+  
+  .send-material-form-container .link {
+    
+  }
+  
+  .send-material-form-container .form-row .form-group1 select {
+    position: absolute;
+    width: 455px;
+    height: 44px;
+    left: 141px;
+    top: 215px;
+  
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+  }
+  
+  .send-material-form-container .form-row .form-group2 select {
+    position: absolute;
+    width: 455px;
+    height: 44px;
+    left: 618px;
+    top: 215px;
+  
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+  }
+  
+  .send-material-form-container .form-row .form-group3 select {
+    position: absolute;
+    width: 455px;
+    height: 44px;
+    left: 1096px;
+    top: 215px;
+  
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+  }
+  
+  .send-material-form-container .form-group4  input {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 527px;
+    height: 44px;
+    left: 141px;
+    top: 281px;
+    
+    background: #FFFFFF;
+    /* Grey2 */
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+  }
+  
+  .send-material-form-container .form-group5  .file-label {
+   /* Rectangle 10 */
+
+position: absolute;
+/* width: 299px; */
+  height: 36px;
+  left: 141px;
+top: 284px;
+
+/* primery */
+/* background: #009E94; */
+border-radius: 50px;
+  }
+  
+  .send-material-form-container .form-group6  input {
+    position: absolute;
+    width: 1424px;
+    height: 44px;
+    left: 141px;
+    top: 428px;
+  
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+  }
+  
+  .send-material-form-container .form-group7  .file-label1 {
+    position: absolute;
+    /* width: 299px; */
+    height: 36px;
+    left: 141px;
+    top: 493px;
+    
+    /* primery */
+    background: #009E94;
+    border-radius: 50px;
+  }
+  
+  .send-material-form-container .form-group8 textarea {
+    position: absolute;
+    width: 1426px;
+    height: 177px;
+    left: 141px;
+    top: 553px;
+  
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+  }
+  
+  .send-material-form-container .submit-button {
+    position: absolute;
+    width: 169px;
+    height: 36px;
+    right: 131px;
+    top: 767px;
+  
+    background: linear-gradient(98.77deg, #009E94 9.49%, #74B462 88.86%);
+    border-radius: 10px;
+  }
+  
+  .send-material-form-container h3 {
+    position: absolute;
+    width: 122px;
+    height: 26px;
+    left: 141px;
+    top: 179px;
+  
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  
+    color: #002F2C;
+  }
+  
+  .send-material-form-container p {
+    position: absolute;
+    width: 132px;
+    height: 20px;
+    left: 249px;
+    top: 183px;
+  
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  
+    color: #646464;
+  }
+  
+  .send-material-form-container .form-divider {
+    position: absolute;
+    width: 1422px;
+    height: 0px;
+    left: 144px;
+    top: 358px;
+  
+    border: 1px solid #646464;
+  }
+  
+  .file-input,
+  .file-input1{
+    display: none;
+  }
+  
+  .form-group7 .file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 36px;
+    background: #009E94;
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+    left: 694px;
+    top: 205px;
+  }
+  
+
+  
+  .file-name {
+    margin-top: 6px;
+    font-size: 14px !important;
+    color: #333 !important;
+    position: absolute !important;
+    top: 288px !important;
+    left: 959px !important;
+  }
+  
+  .form-group7 .file-name1 {
+    margin-top: 6px;
+    font-size: 14px !important;
+    color: #333 !important;
+    position: absolute !important;
+    top: 496px !important;
+    left: 408px !important;
+    width: 300px;
+  }
+  

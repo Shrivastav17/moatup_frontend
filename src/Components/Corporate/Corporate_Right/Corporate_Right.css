@@ -22,8 +22,9 @@
 .divider {
     border: none;
     height: 1.5px;
-    background-color: black;
+    /* background-color: black; */
     margin: 9px 0;
+    border: 1px solid #7f7d7d;
 }
 
 .event-card {
